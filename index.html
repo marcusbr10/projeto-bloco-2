@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>SNEAK.Ultra Light</title>
     <link rel="stylesheet" href="style.css">    
 </head>
@@ -17,47 +17,47 @@
             <a>Ofertas</a>
             <a>Coleções</a>
         </nav>
-        <div>
-            <div>
-                <img src="./assets/nav/Vector.svg" alt="">
-                <input type="text">
+        <div class="acoes">
+            <div class="busca">
+                <img class="busca-logo" src="./assets/nav/Vector.svg" alt="">
+                <input class="busca-input" type="text" placeholder="Procurar">
             </div>
-            <div>
-                <button>
-                    <img src="./assets/nav/Vector0.svg" alt="">
+            <div class="carrinho">
+                <button class="carrinho-botao">
+                    <img class="carrinho-logo" src="./assets/nav/Vector0.svg" alt="">
                 </button>                
             </div>            
         </div>
     </header>
     <main> <!-- Conteúdo principal do site -->
-        <section>
-            <div>
+        <section class="banner">
+            <div class="banner-textos">
                 <h1>SNEAK.Ultra Light</h1>
                 <p>Os tênis SNEAK foram criados especificamente para treinos de circuito, seja para aulas fitness em casa ou para sua própria rotina de treinos.</p>
-                <button>
-                    <span>Adicionar ao carrinho</span>
+                <button class="adicionar-carrinho">
+                    <span class="adicionar-carrinho-texto">Adicionar ao carrinho</span>
                     <img src="./assets/banner/Vector.svg" alt="">
                 </button>
             </div>
             <div>
-                <img src="./assets/banner/Graphic.png" alt="">
+                <img class="banner-tenis" src="./assets/banner/Graphic.png" alt="">
             </div>
         </section>
         
-        <section>            
+        <section class="tenis">            
             <h2>CORRIDA - MASCULINO</h2>
             <img src="./assets/tenis/Group 18.png" alt="">
             <img src="./assets//tenis/image 5.png" alt="">
             <p>Branco</p>
-            <button>
-                <span>Adicionar ao carrinho</span>                
+            <button class="adicionar-carrinho">
+                <span class="adicionar-carrinho-texto">Adicionar ao carrinho</span>                
             </button>
             </div>
         </section>
 
-        <section>
-            <div>
-                <div>
+        <section class="destaques">
+            <div class="destaque">
+                <div class="destaque-texto">
                     <h3>Leveza e agilidade</h3>
                     <p>A construção ligeira de espuma e malha do SNEAK proporcionam conforto e agilidade durante o exercício. Um “burpee break” na parte frontal do pé torna-o extremamente flexível para fazer prancha ou Mountain Climber.</p>
                 </div>
@@ -66,17 +66,17 @@
                 </div>
 
             </div>
-            <div>
+            <div class="destaque">
                 <div>
                     <img src="./assets/destaques/Amortecimento imediato.png" alt="">
                 </div>
-                <div>
+                <div class="destaque-texto">
                     <h3>Amortecimento imediato</h3>
                     <p>A espuma grossa sob o pé absorve o impacto e retorna a energia ao correr com os joelhos altos e ao saltar. O suporte de arco da parte média do pé garante conforto durante todo o treino.</p>
                 </div>           
             </div>
-            <div>
-                <div>
+            <div class="destaque">
+                <div class="destaque-texto">
                     <h3>Sensação de estabilização</h3>
                     <p>O outrigger - a proteção lateral - dá estabilidade ao pé ao fazer movimentos laterais, como por exemplo, o Skater Squat. </p>
                 </div>
@@ -86,36 +86,42 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="./assets/corra/↗.png" alt="">
-                <p>CORRA</p>
+        <section class="corra">
+            <div class="corra-texto">
+                <p class="corra-vetor"><img src="./assets/corra/↗.png" alt="">CORRA</p>                
                 <p>COMO SE O MUNDO</p>
                 <p>DEPENDESSE DE VOCÊ</p>
             </div>
-            <img src="./assets/corra/Image (1).png" alt="">
+            <img class="corra-imagem" src="./assets/corra/Image (1).png" alt="">
         </section>
 
         
 
-        <section>
-            <form>                
-                <input type="text" name="nome" placeholder="Nome"/><br>                
-                <input type="email" name="email" placeholder="Email"/><br>                
-                <textarea cols="15" rows="5" name="comentarios" placeholder="Comentários"></textarea><br>                
-                <input type="checkbox" name="checkbox"/>
-                <label for="checkbox">Concordo com a política de privacidade</label><br>
-                <button>Enviar</button><br>
+        <section class="contato">
+            <iframe
+            width="720"
+            height="700" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=11&center=-15.7975%2C-47.8919&key=AIzaSyALzwXvsSG3Mbz0mqXnR6-Ly_-8gjYR9R8">
+            </iframe>
+            <form>
+                <h3>Entre em contato</h3>                
+                <input class="contato-input" type="text" name="nome" placeholder="Nome"/>                
+                <input class="contato-input" type="email" name="email" placeholder="Email"/>                
+                <textarea class="contato-input" cols="15" rows="5" name="comentarios" placeholder="Comentários"></textarea>                
+                <div class="contato-checkbox">
+                    <input class="teste" type="checkbox" name="checkbox"/>
+                    <label for="checkbox">Concordo com a política de privacidade</label>
+                </div>
+                <button><span class="adicionar-carrinho-texto">Enviar</span></button>
             </form>
         </section>              
     </main>
     
     <footer>
-        <div>
-            <div>
+        <div class="containers">
+            <div class="brand">
                 <p>SNEAK.</p>
             </div>
-            <div>
+            <div class="container">
                 <h6>SOBRE SNEAK</h6>
                 <ul>
                     <li>Novidades</li>
@@ -125,7 +131,7 @@
                 </ul>
 
             </div>
-            <div>
+            <div class="container">
                 <h6>AJUDA</h6>
                 <ul>
                     <li>Status do pedido</li>
@@ -134,7 +140,7 @@
                     <li>Opções de pagamento</li>
                 </ul>
             </div>
-            <div>
+            <div class="container">
                 <h6>REDES SOCIAIS</h6>
                 <div>
                     <img src="./assets/footer/Instagram.png" alt="">
@@ -143,8 +149,9 @@
                 </div>                
             </div>
         </div>
-        <div>
-            <p>DESIGNED BY<img src="./assets/footer/mentorama..png" alt=""></p>
+        <div class="creditos">
+            <p>DESIGNED BY</p>
+            <img src="./assets/footer/mentorama..png" alt="">
         </div>
     </footer>
     
